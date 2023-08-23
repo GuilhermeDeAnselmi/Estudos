@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "CNT";
+  src: url(src/fonts/ComicNeueSansID.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  text-align: justify;
+}
+
+:root {
+  --cor01: #008000;
+  --cor02: purple;
+  --cor03: yellow;
+  --cor04: #00ff00;
+
+  --font-Normal: Arial, Helvetica, sans-serif;
+  --font-CNT: "CNT", Helvetica, sans-serif;
+}
+
+main > h1 {
+  font-family: var(--font-CNT);
+}
+
+body {
+  background-image: linear-gradient(to bottom, #008000, purple, yellow);
+}
+
+main {
+  background-color: var(--cor04);
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.centro {
+  text-align: center;
+  font-weight: bold;
+}
+
+ins {
+  text-decoration: none;
+}
+
+p > a {
+  text-decoration: none;
+  color: #000000;
+}
+
+p > a::after {
+  content: " ⇐";
+  font-weight: bold;
+}
+
+p > a::before {
+  content: "⇒";
+  font-weight: bold;
+}
+
+.linksyou:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.linkstwi:hover {
+  color: purple;
+  transition: 0.5s;
+}
+
+img {
+  box-shadow: 1px 1px 8px 0px white;
+  border-radius: 18px;
+  max-width: 420px;
+  max-height: 250px;
+  width: 100%;
+}
+
+h1#titulo {
+  margin: 7px;
+  background-color: rgba(240, 248, 255, 0.267);
+  box-shadow: 0px 1px 6px rgb(0, 255, 34);
+  border-radius: 18px;
+  font-family: var(--font-CNT);
+  font-style: normal;
+  text-align: center;
+}
