@@ -15,9 +15,15 @@
   }
 }
 
-@media (max-width: 459px) {
+@media (max-width: 870px) {
   section p {
-    font-size: 35px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 504px) {
+  .imagem p {
+    padding: 0;
   }
 }
 
@@ -65,7 +71,7 @@ section {
   line-height: 2em;
   padding-left: 30px;
   font-family: var(--fontBunita);
-  font-size: 2.9em;
+  font-size: 2.7em;
 }
 
 .normal {
@@ -79,9 +85,8 @@ section {
 }
 
 .imagem p {
-  padding: 5px;
   display: inline-block;
-  width: 450px;
+  width: 400px;
   background-color: rgba(0, 0, 0, 0.199);
 }
 
