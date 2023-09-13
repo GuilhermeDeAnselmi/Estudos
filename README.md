@@ -5,3 +5,4 @@
 
 
 <a href="https://guilhermedeanselmi.github.io/Estudos/exercícios/Teste%20de%20site/"> Executar o Teste de site
+<a href="https://guilhermedeanselmi.github.io/Estudos/exercícios/Teste%20de%20site/"> Teste de Parallax
