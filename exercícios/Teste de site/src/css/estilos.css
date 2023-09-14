@@ -5,6 +5,10 @@
   src: url(src/fonts/ComicNeueSansID.ttf) format("truetype");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +21,9 @@
   --cor04: #00ff00;
 
   --font-Normal: Arial, Helvetica, sans-serif;
-  --font-CNT: "CNT", Helvetica, sans-serif;
+  --fontFODA: 'Fredericka the Great', Helvetica, sans-serif;
+  --fontH: arial;
+  --font: 'Averia Serif Libre';
 }
 
 body {
@@ -29,7 +35,7 @@ h1#titulo {
   background-color: rgba(240, 248, 255, 0.267);
   box-shadow: 0px 1px 6px rgb(0, 255, 34);
   border-radius: 18px;
-  font-family: var(--font-CNT);
+  font-family: var(--);
   font-style: normal;
   text-align: center;
 }
@@ -37,7 +43,6 @@ h1#titulo {
 main > h1 {
   font-family: var(--font-CNT);
 }
-
 
 main {
   margin: auto;
@@ -49,25 +54,25 @@ main {
   border-radius: 5px;
 }
 
-main h1{
+main h1 {
   text-align: center;
   background-color: coral;
   border-radius: 10px;
 }
 
-main p{
+main p {
   font-size: 1.3em;
   text-indent: 5px;
   background-image: linear-gradient(to right, var(--cor02));
 }
 
-main ul{
-  list-style-type: \1F44D\00A0;
+main ul {
+  list-style-type: "\1F44D\00A0";
   list-style-position: inside;
 }
 
-main ol{
-  list-style-type: \1F44E\00A0;
+main ol {
+  list-style-type: "\1F44E\00A0";
   list-style-position: inside;
 }
 
@@ -103,5 +108,3 @@ img {
   min-width: 320px;
   width: 100%;
 }
-
-
