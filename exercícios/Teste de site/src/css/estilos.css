@@ -7,7 +7,7 @@
 
 * {
   margin: 0;
-  text-align: justify;
+  padding: 0;
 }
 
 :root {
@@ -20,27 +20,55 @@
   --font-CNT: "CNT", Helvetica, sans-serif;
 }
 
-main > h1 {
-  font-family: var(--font-CNT);
-}
-
 body {
   background-image: linear-gradient(to bottom, #008000, purple, yellow);
 }
 
+h1#titulo {
+  margin: 7px;
+  background-color: rgba(240, 248, 255, 0.267);
+  box-shadow: 0px 1px 6px rgb(0, 255, 34);
+  border-radius: 18px;
+  font-family: var(--font-CNT);
+  font-style: normal;
+  text-align: center;
+}
+
+main > h1 {
+  font-family: var(--font-CNT);
+}
+
+
 main {
+  margin: auto;
+  padding: 10px;
+  max-width: 1000px;
+  min-width: 320px;
   background-color: var(--cor04);
-  margin: 10px;
+  margin-bottom: 20px;
   border-radius: 5px;
 }
 
-.centro {
+main h1{
   text-align: center;
-  font-weight: bold;
+  background-color: coral;
+  border-radius: 10px;
 }
 
-ins {
-  text-decoration: none;
+main p{
+  font-size: 1.3em;
+  text-indent: 5px;
+  background-image: linear-gradient(to right, var(--cor02));
+}
+
+main ul{
+  list-style-type: \1F44D\00A0;
+  list-style-position: inside;
+}
+
+main ol{
+  list-style-type: \1F44E\00A0;
+  list-style-position: inside;
 }
 
 p > a {
@@ -49,12 +77,12 @@ p > a {
 }
 
 p > a::after {
-  content: " ⇐";
+  content: "👈";
   font-weight: bold;
 }
 
 p > a::before {
-  content: "⇒";
+  content: "👉";
   font-weight: bold;
 }
 
@@ -72,16 +100,8 @@ img {
   box-shadow: 1px 1px 8px 0px white;
   border-radius: 18px;
   max-width: 420px;
-  max-height: 250px;
+  min-width: 320px;
   width: 100%;
 }
 
-h1#titulo {
-  margin: 7px;
-  background-color: rgba(240, 248, 255, 0.267);
-  box-shadow: 0px 1px 6px rgb(0, 255, 34);
-  border-radius: 18px;
-  font-family: var(--font-CNT);
-  font-style: normal;
-  text-align: center;
-}
+
