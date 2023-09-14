@@ -21,9 +21,9 @@
   --cor04: #00ff00;
 
   --font-Normal: Arial, Helvetica, sans-serif;
-  --fontFODA: 'Fredericka the Great', Helvetica, sans-serif;
+  --fontFODA: "Fredericka the Great", Helvetica, sans-serif;
   --fontH: arial;
-  --font: 'Averia Serif Libre';
+  --font: "Averia Serif Libre";
 }
 
 body {
@@ -31,13 +31,12 @@ body {
 }
 
 h1#titulo {
+  font-family: var(--fontFODA);
+  text-align: center;
   margin: 7px;
   background-color: rgba(240, 248, 255, 0.267);
   box-shadow: 0px 1px 6px rgb(0, 255, 34);
   border-radius: 18px;
-  font-family: var(--);
-  font-style: normal;
-  text-align: center;
 }
 
 main > h1 {
