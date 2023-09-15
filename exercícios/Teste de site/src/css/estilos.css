@@ -7,8 +7,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +42,7 @@ main {
   font-family: var(--font);
   margin: auto;
   padding: 10px;
-  max-width: 1000px;
+  max-width: 1100px;
   min-width: 320px;
   background-color: var(--cor04);
   margin-bottom: 20px;
