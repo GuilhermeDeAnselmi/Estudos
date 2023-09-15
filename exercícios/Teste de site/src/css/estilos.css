@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: ;
-  src: url(../fonts/);
+  font-family: "Avaria";
+  src: url(../fonts/AveriaSerifLibre-Bold.ttf) format("truetype");
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
@@ -22,7 +22,7 @@
 
   --font-Normal: Arial, Helvetica, sans-serif;
   --fontFODA: "Fredericka the Great", Helvetica, sans-serif;
-  --font: "Averia Serif Libre";
+  --font: "Avaria";
 }
 
 body {
@@ -38,11 +38,10 @@ h1#titulo {
   border-radius: 18px;
 }
 
-main > h1 {
-  font-family: var(--font);
-}
+
 
 main {
+  font-family: var(--font);
   margin: auto;
   padding: 10px;
   max-width: 1000px;
@@ -90,19 +89,28 @@ p > a::before {
 }
 
 .linksyou:hover {
+  text-decoration: underline;
   color: red;
   transition: 0.5s;
 }
 
 .linkstwi:hover {
+  text-decoration: underline;
   color: purple;
   transition: 0.5s;
 }
 
 img {
-  box-shadow: 1px 1px 8px 0px white;
+  box-shadow: 2px 4px 7px 0px rgb(0, 0, 0);
   border-radius: 18px;
   max-width: 420px;
   min-width: 320px;
   width: 100%;
+}
+
+footer{
+  padding: 10px;
+  text-align: center;
+  background-color: var(--cor04);
+  font-family: var(--font);
 }
