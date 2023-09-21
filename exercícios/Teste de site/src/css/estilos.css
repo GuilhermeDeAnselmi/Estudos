@@ -7,6 +7,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 
+@media,0
+
 * {
   margin: 0;
   padding: 0;
@@ -87,12 +89,18 @@ p > a::before {
 }
 
 .linksyou:hover {
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
   text-decoration: underline;
   color: red;
   transition: 0.5s;
 }
 
 .linkstwi:hover {
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
   text-decoration: underline;
   color: purple;
   transition: 0.5s;
