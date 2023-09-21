@@ -7,10 +7,37 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 
-@media (max-width: 568px) {
-  main img {
+@media (max-width: 624px) {
+  main video {
+    width: 520px;
+  }
+}
+
+@media (max-width: 544px) {
+  main video {
+    width: 500px;
+  }
+}
+
+@media (max-width: 524px) {
+  main video {
+    width: 420px;
+  }
+}
+
+@media (max-width: 444px) {
+  main video {
     width: 320px;
   }
+}
+
+@media (max-width: 354px) {
+  body main {
+    width: 320px;
+  }
+}
+
+
 
 * {
   margin: 0;
@@ -44,13 +71,14 @@ h1#titulo {
 
 
 main {
+  text-align: justify;
   font-family: var(--font);
   margin: auto;
-  padding: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
   max-width: 1100px;
   min-width: 320px;
   background-color: var(--cor04);
-  margin-bottom: 20px;
   border-radius: 5px;
 }
 
@@ -62,7 +90,7 @@ main h1 {
 
 main p {
   font-size: 1.3em;
-  text-indent: 5px;
+  text-indent: 3px;
   background-image: linear-gradient(to right, var(--cor02));
 }
 
@@ -74,6 +102,11 @@ main ul {
 main ol {
   list-style-type: "\1F44E\00A0";
   list-style-position: inside;
+}
+
+main video{
+  border-radius: 5px;
+  display: block;
 }
 
 p > a {
@@ -97,7 +130,7 @@ p > a::before {
   padding: 5px;
   text-decoration: underline;
   color: red;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .linkstwi:hover {
@@ -106,7 +139,7 @@ p > a::before {
   padding: 5px;
   text-decoration: underline;
   color: purple;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 img {
@@ -118,7 +151,7 @@ img {
 }
 
 footer{
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   background-color: var(--cor04);
   font-family: var(--font);
