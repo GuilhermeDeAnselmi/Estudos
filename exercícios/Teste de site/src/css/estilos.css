@@ -45,12 +45,13 @@
 }
 
 :root {
-  --cor01: #008000;
-  --cor02: purple;
-  --cor03: yellow;
-  --cor04: #00ff00;
-
-  
+  --cor0: rgba(173, 173, 173, 0.521);
+  --cor1: white;
+  --cor2: #6e6e73;
+  --cor3: #1d1d1f;
+  --cor4: green;
+  --cor5: #385fda;
+  --cor6: rgba(0, 0, 0, 0.5);
 
   --font-Normal: Arial, Helvetica, sans-serif;
   --fontFODA: "Fredericka the Great", Helvetica, sans-serif;
@@ -64,9 +65,9 @@ body {
 h1#titulo {
   font-family: var(--fontFODA);
   text-align: center;
-  margin: 7px;
-  background-color: rgba(240, 248, 255, 0.267);
-  box-shadow: 0px 1px 6px rgb(0, 255, 34);
+  margin: 5px;
+  background-color: var(--cor1);
+  box-shadow:  0px 1px 6px #000000;
   border-radius: 18px;
 }
 
@@ -80,14 +81,23 @@ main {
   padding: 8px;
   max-width: 1100px;
   min-width: 320px;
-  background-color: var(--cor04);
+  background-color: var(--cor1);
   border-radius: 5px;
 }
 
 main h1 {
   text-align: center;
-  background-color: coral;
+  background-color: var(--cor2);
   border-radius: 10px;
+}
+
+.centro{
+  text-indent: 5px;
+  width: 500px;
+  border-radius: 5px 0px 0px 5px;
+  background-image: linear-gradient(to right, var(--cor2), transparent);
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 main p {
@@ -106,9 +116,10 @@ main ol {
   list-style-position: inside;
 }
 
-main video{
+main video {
   border-radius: 5px;
   display: block;
+  box-shadow: 2px 4px 6px 1px black;
 }
 
 p > a {
@@ -144,7 +155,7 @@ p > a::before {
   transition: 0.7s;
 }
 
-img {
+main img {
   box-shadow: 2px 4px 7px 0px rgb(0, 0, 0);
   border-radius: 18px;
   max-width: 420px;
@@ -152,7 +163,7 @@ img {
   width: 100%;
 }
 
-footer{
+footer {
   padding: 5px;
   text-align: center;
   background-color: var(--cor04);
