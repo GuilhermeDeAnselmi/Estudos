@@ -11,8 +11,9 @@
 
         table{
             height: 200px;
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -24,6 +25,20 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(even){ /*2n*/
+            background-color: aqua;
+        }
+
+        tbody tr:nth-child(odd){ /* 2n-1*/
+            background-color: blanchedalmond;
         }
 
         .num{
@@ -56,7 +71,7 @@
         <thead>
             <tr>
                 <th scope="col">ESTADO</th>
-                <th>POPULAÇÂO</th>
+                <th scope="col" style=" width: 50px;">POPULAÇÂO</th>
             </tr>
         </thead>
         <tbody>
@@ -69,14 +84,52 @@
                     <td>Rio de janeiro</td>
                     <td class="num">17.264.943</td>
                 </tr>
+                <tr>
+                    <td>
+                        Cajamar
+                    </td>
+                    <td class="num">
+                        67.546.560
+                    </td>
+                </tr>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>TOTAL DE HABITANTES</th>
+                <th scope="row">TOTAL DE HABITANTES</th>
                 <td class="num" ><strong>84.352.783</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni amet obcaecati voluptates? Quae accusamus officiis tempora, sunt repellendus, doloremque recusandae fuga explicabo voluptatibus maiores necessitatibus dolorem ducimus, cumque atque.
+    Eligendi optio possimus eius cupiditate blanditiis asperiores eos sunt illum commodi animi? Voluptatibus dolor aperiam repudiandae sint facere quibusdam magni provident iusto illum eum, aut rerum dolores quis quas dolorum.
+    Beatae esse eveniet est. Voluptate rerum distinctio vero dolor velit ea consequuntur mollitia quod, autem aperiam! Id mollitia, molestias ipsam aut minima ullam, distinctio dolor eius laborum officiis accusamus officia.
+    Fugit ut in sapiente nobis animi aut illum alias odit iusto sint architecto temporibus sunt ratione, eligendi earum at inventore tenetur ipsa officiis aperiam odio rem. Saepe sint dignissimos ipsam?
+    Perspiciatis nesciunt doloribus, expedita facilis molestiae voluptates, atque incidunt hic magnam tempore dolores temporibus quisquam quidem nostrum. Consectetur, voluptate a quibusdam laudantium dolor tempore illum, aperiam quasi error est vero.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni amet obcaecati voluptates? Quae accusamus officiis tempora, sunt repellendus, doloremque recusandae fuga explicabo voluptatibus maiores necessitatibus dolorem ducimus, cumque atque.
+        Eligendi optio possimus eius cupiditate blanditiis asperiores eos sunt illum commodi animi? Voluptatibus dolor aperiam repudiandae sint facere quibusdam magni provident iusto illum eum, aut rerum dolores quis quas dolorum.
+        Beatae esse eveniet est. Voluptate rerum distinctio vero dolor velit ea consequuntur mollitia quod, autem aperiam! Id mollitia, molestias ipsam aut minima ullam, distinctio dolor eius laborum officiis accusamus officia.
+        Fugit ut in sapiente nobis animi aut illum alias odit iusto sint architecto temporibus sunt ratione, eligendi earum at inventore tenetur ipsa officiis aperiam odio rem. Saepe sint dignissimos ipsam?
+        Perspiciatis nesciunt doloribus, expedita facilis molestiae voluptates, atque incidunt hic magnam tempore dolores temporibus quisquam quidem nostrum. Consectetur, voluptate a quibusdam laudantium dolor tempore illum, aperiam quasi error est vero.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni amet obcaecati voluptates? Quae accusamus officiis tempora, sunt repellendus, doloremque recusandae fuga explicabo voluptatibus maiores necessitatibus dolorem ducimus, cumque atque.
+            Eligendi optio possimus eius cupiditate blanditiis asperiores eos sunt illum commodi animi? Voluptatibus dolor aperiam repudiandae sint facere quibusdam magni provident iusto illum eum, aut rerum dolores quis quas dolorum.
+            Beatae esse eveniet est. Voluptate rerum distinctio vero dolor velit ea consequuntur mollitia quod, autem aperiam! Id mollitia, molestias ipsam aut minima ullam, distinctio dolor eius laborum officiis accusamus officia.
+            Fugit ut in sapiente nobis animi aut illum alias odit iusto sint architecto temporibus sunt ratione, eligendi earum at inventore tenetur ipsa officiis aperiam odio rem. Saepe sint dignissimos ipsam?
+            Perspiciatis nesciunt doloribus, expedita facilis molestiae voluptates, atque incidunt hic magnam tempore dolores temporibus quisquam quidem nostrum. Consectetur, voluptate a quibusdam laudantium dolor tempore illum, aperiam quasi error est vero.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni amet obcaecati voluptates? Quae accusamus officiis tempora, sunt repellendus, doloremque recusandae fuga explicabo voluptatibus maiores necessitatibus dolorem ducimus, cumque atque.
+                Eligendi optio possimus eius cupiditate blanditiis asperiores eos sunt illum commodi animi? Voluptatibus dolor aperiam repudiandae sint facere quibusdam magni provident iusto illum eum, aut rerum dolores quis quas dolorum.
+                Beatae esse eveniet est. Voluptate rerum distinctio vero dolor velit ea consequuntur mollitia quod, autem aperiam! Id mollitia, molestias ipsam aut minima ullam, distinctio dolor eius laborum officiis accusamus officia.
+                Fugit ut in sapiente nobis animi aut illum alias odit iusto sint architecto temporibus sunt ratione, eligendi earum at inventore tenetur ipsa officiis aperiam odio rem. Saepe sint dignissimos ipsam?
+                Perspiciatis nesciunt doloribus, expedita facilis molestiae voluptates, atque incidunt hic magnam tempore dolores temporibus quisquam quidem nostrum. Consectetur, voluptate a quibusdam laudantium dolor tempore illum, aperiam quasi error est vero.</p>
+
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni amet obcaecati voluptates? Quae accusamus officiis tempora, sunt repellendus, doloremque recusandae fuga explicabo voluptatibus maiores necessitatibus dolorem ducimus, cumque atque.
+                    Eligendi optio possimus eius cupiditate blanditiis asperiores eos sunt illum commodi animi? Voluptatibus dolor aperiam repudiandae sint facere quibusdam magni provident iusto illum eum, aut rerum dolores quis quas dolorum.
+                    Beatae esse eveniet est. Voluptate rerum distinctio vero dolor velit ea consequuntur mollitia quod, autem aperiam! Id mollitia, molestias ipsam aut minima ullam, distinctio dolor eius laborum officiis accusamus officia.
+                    Fugit ut in sapiente nobis animi aut illum alias odit iusto sint architecto temporibus sunt ratione, eligendi earum at inventore tenetur ipsa officiis aperiam odio rem. Saepe sint dignissimos ipsam?
+                    Perspiciatis nesciunt doloribus, expedita facilis molestiae voluptates, atque incidunt hic magnam tempore dolores temporibus quisquam quidem nostrum. Consectetur, voluptate a quibusdam laudantium dolor tempore illum, aperiam quasi error est vero.</p>
 </body>
 </html>
